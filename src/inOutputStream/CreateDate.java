@@ -12,13 +12,11 @@ public class CreateDate {
             fileIn = new FileReader("D:\\fynjy\\file.txt");
             fileOut = new FileWriter("D:\\fynjy\\new_file.txt");
 
-            int a;
-            while ((a = fileIn.read()) != -1) {
-                fileOut.write(a);
+            int c = 1 ;
+            fileOut.write("c");
+//            fileOut.write("18/05/2024");
+//            fileOut.append(" saasd");
 
-            }
-            fileOut.write("18/05/2024");
-            fileOut.append(" saasd");
         } finally {
             if (fileIn != null) {
                 fileIn.close();
